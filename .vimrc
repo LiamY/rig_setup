@@ -69,7 +69,7 @@ set shiftwidth=2 softtabstop=2 expandtab
 set history=200
 
 let g:netrw_altv = 1
-let g:netrw_liststyle = 3
+" let g:netrw_liststyle = 3
 let g:netrw_winsize = ""
 
 
