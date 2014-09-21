@@ -3,4 +3,12 @@
 
 [alias]
   st = status
+  br = branch
+  ci = commit
+  co = checkout
+  logr = "log --pretty=format:'%h %s <= %an, %ar' --graph"
+  unstage = "reset HEAD --"
 
+[user]
+	name = anonymous
+	email = anonymous@email.com
