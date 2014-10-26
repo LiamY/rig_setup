@@ -1,3 +1,9 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
+
+
 " Set up Vundle to manage vim plugins
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -10,17 +16,13 @@ if !filereadable(vundle_readme)
 endif
 
 " Pre-Vundle Setup
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
 Plugin 'gmarik/vundle'
 " Vundle Bundles
 Plugin 'StripWhiteSpaces'
 Plugin 'godlygeek/tabular.git'
 " Fuzzy find -- super useful
 Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'surround.vim'
@@ -33,14 +35,14 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-ruby/vim-ruby'
 
-
-
-" colorscheme koehler
-colorscheme distinguished
-
-syntax enable
+call vundle#end()
 filetype plugin indent on
+
+
 set background=dark
+colorscheme liam_colors
+syntax enable
+hi Error NONE
 
 set autoindent " keep current indentation for newline
 set autoread " keep buffer in sync with filesystem
@@ -68,11 +70,10 @@ set showtabline=2 " always show the tab bar
 set shiftwidth=2 softtabstop=2 expandtab
 set history=200
 
+" netrw window stuff
 let g:netrw_altv = 1
 " let g:netrw_liststyle = 3
 let g:netrw_winsize = ""
-
-
 
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -81,3 +82,8 @@ set incsearch		" do incremental searching
 
 set hlsearch
 
+" GUI setup:
+if has("gui_macvim")
+  let g:netrw_winsize = 50
+  colorscheme twilight
+endif
