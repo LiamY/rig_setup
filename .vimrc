@@ -86,4 +86,6 @@ set hlsearch
 if has("gui_macvim")
   let g:netrw_winsize = 50
   colorscheme twilight
+  :set guioptions-=r  "remove right-hand scroll bar
+  :set guioptions-=L  "remove left-hand scroll bar
 endif
