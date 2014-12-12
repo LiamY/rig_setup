@@ -12,5 +12,5 @@ automatically.
 Something like:
 
 ```
-curl -s https://raw.githubusercontent.com/liamy/rig_setup/master/infest.sh | sh
+curl -s https://raw.githubusercontent.com/liamy/rig_setup/master/config_setup.sh | sh
 ```
