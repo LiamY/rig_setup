@@ -20,7 +20,7 @@ safeInstall() {
   return 0;
 }
 
-safeInstall '.vimrc'
+safeInstall 'vimrc'
 
 echo 'Installing bundles...'
 vim +PluginInstall +qa
