@@ -1,5 +1,5 @@
 url() {
-  echo "https://raw.githubusercontent.com/ehrenmurdick/config/master/$1"
+  echo "https://raw.githubusercontent.com/liamy/rig_setup/master/$1"
 }
 
 install() {
@@ -20,9 +20,7 @@ safeInstall() {
   return 0;
 }
 
-safeInstall 'vimrc'
-safeInstall 'gvimrc'
-safeInstall 'irbrc'
+safeInstall '.vimrc'
 
 echo 'Installing bundles...'
 vim +PluginInstall +qa
