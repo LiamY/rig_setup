@@ -3,7 +3,7 @@ url() {
 }
 
 install() {
-  curl -s $(url $1) > ~/.$1
+  curl -s $(url $1) > ~/$1
 }
 
 backup() {
@@ -13,7 +13,7 @@ backup() {
 safeInstall() {
   echo "Installing $1..."
   if [ -f ~/$1 ]; then
-    echo "File ~/$1 exists. Backing it up to ~/.$1~"
+    echo "File ~/$1 exists. Backing it up to ~/$1~"
     backup $1
   fi
   install $1
