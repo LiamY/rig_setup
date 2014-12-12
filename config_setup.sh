@@ -7,13 +7,13 @@ install() {
 }
 
 backup() {
-  cp ~/.$1 ~/.$1~
+  cp ~/$1 ~/$1~
 }
 
 safeInstall() {
   echo "Installing $1..."
-  if [ -f ~/.$1 ]; then
-    echo "File ~/.$1 exists. Backing it up to ~/.$1~"
+  if [ -f ~/$1 ]; then
+    echo "File ~/$1 exists. Backing it up to ~/.$1~"
     backup $1
   fi
   install $1
