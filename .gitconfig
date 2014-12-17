@@ -7,6 +7,7 @@
   ci = commit
   co = checkout
   logr = "log --pretty=format:'%h %s <= %an, %ar' --graph"
+  lola = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
   unstage = "reset HEAD --"
 
 [user]
