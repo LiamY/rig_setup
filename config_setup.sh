@@ -38,6 +38,9 @@ backupInstallHidden() {
 # bash settings
 backupInstallHidden 'bash_profile'
 
+# git settings
+backupInstallHidden 'gitconfig'
+
 # vim configuration
 backupInstallHidden 'terminal_colors' '.vim/colors/'
 
