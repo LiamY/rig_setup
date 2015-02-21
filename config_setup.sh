@@ -28,7 +28,17 @@ backupHidden() {
 
 backup() {
   # stores previous settings in a temp file
-  cp ~/$1 ~/$1~
+  cp ~/$2$1 ~/$2$1~
+}
+
+backupInstall() {
+  echo "Installing $1..."
+  if [ -f ~/$2$1 ]; then
+    echo "File ~/$2$1 exists. Backing it up to ~/$2$1~"
+    backup $1 $2
+  fi
+  install $1 $2
+  return 0;
 }
 
 backupInstallHidden() {
@@ -55,7 +65,7 @@ backupInstallHidden 'bash_profile'
 backupInstallHidden 'gitconfig'
 
 # vim configuration
-backupInstallHidden 'terminal_colors.vim' '.vim/colors/'
+backupInstall 'terminal_colors.vim' '.vim/colors/'
 
 backupInstallHidden 'vimrc' ''
 # backupInstallHidden 'vimrc'
