@@ -40,7 +40,7 @@ filetype plugin indent on
 
 
 set background=dark
-colorscheme liam_colors
+colorscheme terminal_colors
 syntax enable
 hi Error NONE
 
