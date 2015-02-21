@@ -23,7 +23,7 @@ install() {
 
 backupHidden() {
   # stores previous settings in a temp file
-  cp ~/.$1 ~/.$1~
+  cp ~/$2.$1 ~/$2.$1~
 }
 
 backup() {
