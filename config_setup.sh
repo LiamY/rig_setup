@@ -5,12 +5,12 @@ base_url() {
 
 installHidden() {
   # downloads file from rig_setup repo
-  curl $(base_url $1) > ~/.$1
+  curl $(base_url $1) > ~/$2.$1
 }
 
 install() {
   # downloads file from rig_setup repo
-  curl $(base_url $1) > ~/$1
+  curl $(base_url $1) > ~/$2$1
 }
 
 backupHidden() {
@@ -33,7 +33,10 @@ backupInstallHidden() {
   return 0;
 }
 
-backupInstallHidden 'vimrc'
+# vim configuration
+backupInstallHidden 'terminal_colors' '\.vim/colors/'
+backupInstallHidden 'vimrc' ''
+# backupInstallHidden 'vimrc'
 
 echo 'Installing bundles...'
 vim +PluginInstall +qa
