@@ -12,6 +12,7 @@ install() {
   # downloads file from rig_setup repo
   if [ $2 ]; then
     mkdir -p $2
+    echo $2
   fi
   curl $(base_url $1) > ~/$2$1
 }
