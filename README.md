@@ -1,5 +1,6 @@
 Rig Setup
 =========
+(Currently Mac Only, Linux Will Be Supported Soon)
 
 Terminal Environment Configurations
 ---------
