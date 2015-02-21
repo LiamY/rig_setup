@@ -10,6 +10,9 @@ installHidden() {
 
 install() {
   # downloads file from rig_setup repo
+  if [ $2 ]; then
+    mkdir -p $2
+  fi
   curl $(base_url $1) > ~/$2$1
 }
 
@@ -32,9 +35,12 @@ backupInstallHidden() {
   installHidden $1
   return 0;
 }
+# bash settings
+backupInstallHidden 'bash_profile.sh'
 
 # vim configuration
-backupInstallHidden 'terminal_colors' '\.vim/colors/'
+backupInstallHidden 'terminal_colors' '.vim/colors/'
+
 backupInstallHidden 'vimrc' ''
 # backupInstallHidden 'vimrc'
 
