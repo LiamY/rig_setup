@@ -11,6 +11,7 @@ echo '########################################################'
 echo '###              INSTALLING UTILITIES                ###'
 echo '########################################################'
 brew install ack
+brew install tree
 
 # ruby and rails installation
 echo '########################################################'
