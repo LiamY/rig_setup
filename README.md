@@ -23,7 +23,7 @@ To install base platforms for:
 
 Copy and paste the following into your terminal:
 ```
-curl https://raw.githubusercontent.com/liamy/rig_setup/master/platform_installation.sh | sh
+sudo curl https://raw.githubusercontent.com/liamy/rig_setup/master/platform_installation.sh | sh
 ```
 For installation of individual packages, copy and paste the corresponding lines from
 'platform_installation.sh' into your terminal.
