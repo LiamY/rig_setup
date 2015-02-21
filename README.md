@@ -12,7 +12,7 @@ automatically.
 Something like:
 
 ```
-curl -s https://raw.githubusercontent.com/liamy/rig_setup/master/config_setup.sh | sh
+curl https://raw.githubusercontent.com/liamy/rig_setup/master/config_setup.sh | sh
 ```
 
 But it doesn't work yet.
