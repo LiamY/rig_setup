@@ -6,7 +6,7 @@
 		syntax reset
 	endif
 
-	let g:colors_name = 'liam_colors'
+	let g:colors_name = 'terminal_colors'
 
 	if ! has('gui_running')
 		if &t_Co != 256
