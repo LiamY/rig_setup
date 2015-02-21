@@ -42,9 +42,11 @@ backupInstallHidden() {
 }
 
 checkEcho() {
+  echo "#################################################"
   echo "$1"
+  echo "#################################################"
 }
-checkEcho 'vim'
+checkEcho '.vim'
 
 # bash settings
 backupInstallHidden 'bash_profile'
