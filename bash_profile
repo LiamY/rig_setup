@@ -5,5 +5,9 @@ export PS1+=" \[\033[0;33m\]\u\[\033[0m\]@\[\033[0;32m\]\h:\[\033[33;36m\]\w\[\0
 export CLICOLOR=1
 export LSCOLORS="gxBxhxDxfxhxhxhxhxcxcx"
 
+# aliases
+alias node="env NODE_NO_READLINE=1 rlwrap node"
+alias ll="ls -la"
+
 #rvm settings
 source ~/.rvm/scripts/rvm
