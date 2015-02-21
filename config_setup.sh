@@ -34,10 +34,10 @@ backup() {
 backupInstallHidden() {
   echo "Installing $1..."
   if [ -f ~/.$1 ]; then
-    echo "File ~/.$1 exists. Backing it up to ~/.$1~"
-    backupHidden $1
+    echo "File ~/$2.$1 exists. Backing it up to ~/$2.$1~"
+    backupHidden $1 $2
   fi
-  installHidden $1
+  installHidden $1 $2
   return 0;
 }
 # bash settings
