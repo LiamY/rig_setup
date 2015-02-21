@@ -36,7 +36,7 @@ backupInstallHidden() {
   return 0;
 }
 # bash settings
-backupInstallHidden 'bash_profile.sh'
+backupInstallHidden 'bash_profile'
 
 # vim configuration
 backupInstallHidden 'terminal_colors' '.vim/colors/'
