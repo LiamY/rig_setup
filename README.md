@@ -3,16 +3,9 @@ Rig Setup
 
 Programming Environment Configurations
 
-Copy and paste this into the corresponding files on the machine
-you are trying to setup.
-
-At some point I'll put a script in here to do everything
-automatically.
-
-Something like:
+To automatically configure your environment with these settings,
+copy and paste the following into your terminal:
 
 ```
 curl https://raw.githubusercontent.com/liamy/rig_setup/master/config_setup.sh | sh
 ```
-
-But it doesn't work yet.
