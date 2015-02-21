@@ -55,7 +55,7 @@ backupInstallHidden 'bash_profile'
 backupInstallHidden 'gitconfig'
 
 # vim configuration
-backupInstallHidden 'terminal_colors' '.vim/colors/'
+backupInstallHidden 'terminal_colors.vim' '.vim/colors/'
 
 backupInstallHidden 'vimrc' ''
 # backupInstallHidden 'vimrc'
