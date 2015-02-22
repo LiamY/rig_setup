@@ -12,7 +12,8 @@ echo '###              INSTALLING UTILITIES                ###'
 echo '########################################################'
 brew install ack
 brew install tree
-brew install macvim
+brew install caskroom/cask/brew-cask
+brew cask install macvim
 
 # ruby and rails installation
 echo '########################################################'
