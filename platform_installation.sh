@@ -21,6 +21,7 @@ brew install rbenv
 brew install ruby-build
 rbenv install 2.2.0
 rbenv rehash
+gem install rails --version=4.2
 
 # python and django installation
 echo '########################################################'
