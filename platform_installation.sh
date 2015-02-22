@@ -42,7 +42,7 @@ brew install node
 echo '########################################################'
 echo '###            INSTALLING POSTGRESQL                 ###'
 echo '########################################################'
-brew install postgresql93
+brew install homebrew/versions/postgresql93
 echo 'SETUP POSTGRESQL TO START AT LOGIN'
 ln -sfv /usr/local/opt/postgresql93/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql93.plist
