@@ -28,3 +28,14 @@ sudo curl https://raw.githubusercontent.com/liamy/rig_setup/master/platform_inst
 ```
 For installation of individual packages, copy and paste the corresponding lines from
 'platform_installation.sh' into your terminal.
+
+Additional Notes
+---------
+If `psql postgres` fails after installation, it may be necessary to run the following:
+```
+sudo rm -rf /usr/local/var/postgres
+sudo mkdir /usr/local/var/postgres
+sudo chown $(whoami) /usr/local/var/postgres
+initdb /usr/local/var/postgres
+```
+Keep in mind, this will destroy any pre-existing databases you had in /usr/local/var/postgres
