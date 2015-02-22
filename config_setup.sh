@@ -63,6 +63,8 @@ backupInstall 'terminal_colors.vim' '.vim/colors/'
 backupInstallHidden 'vimrc' ''
 # backupInstallHidden 'vimrc'
 
+source ~/.bash_profile
+
 echo 'Installing bundles...'
 vim +PluginInstall +qa
 echo
