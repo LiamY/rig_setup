@@ -12,6 +12,7 @@ echo '###              INSTALLING UTILITIES                ###'
 echo '########################################################'
 brew install ack
 brew install tree
+brew install macvim
 
 # ruby and rails installation
 echo '########################################################'
