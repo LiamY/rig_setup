@@ -21,6 +21,7 @@ echo '########################################################'
 brew install rbenv
 brew install ruby-build
 sudo rbenv install 2.2.0
+rbenv global 2.2.0
 rbenv rehash
 gem install rails --version=4.2
 
