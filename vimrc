@@ -64,6 +64,7 @@ set ts=2
 set wildmenu
 set wildmode=longest,list,full
 
+set nowrap " allow lines to flow off the page
 set scrolloff=8 " show 8 lines of context above and below the line you are on
 set number
 set showtabline=2 " always show the tab bar
