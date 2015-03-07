@@ -1,21 +1,20 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
 " Set up Vundle to manage vim plugins
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
   echo "Installing Vundle.."
   echo ""
   silent !mkdir -p ~/.vim/bundle
-  silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-  let iCanHazVundle=0
+  silent !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 endif
 
 " Pre-Vundle Setup
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " Vundle Bundles
 Plugin 'StripWhiteSpaces'
 Plugin 'godlygeek/tabular.git'
@@ -36,6 +35,7 @@ Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
+:let g:html_indent_inctags = "html,body,head,tbody" " fix wierd html indentation
 
 
 set background=dark
@@ -64,7 +64,7 @@ set ts=2
 set wildmenu
 set wildmode=longest,list,full
 
-set nowrap " allow lines to flow off the page
+set nowrap " allow lines to run off page
 set scrolloff=8 " show 8 lines of context above and below the line you are on
 set number
 set showtabline=2 " always show the tab bar
@@ -89,4 +89,6 @@ if has("gui_macvim")
   colorscheme twilight
   :set guioptions-=r  "remove right-hand scroll bar
   :set guioptions-=L  "remove left-hand scroll bar
+  " syntax font and height
+  :set guifont=Monaco:h13
 endif
