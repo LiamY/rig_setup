@@ -17,10 +17,6 @@ Programming Environment Configurations
 ---------
 To install base platforms for:
   * homebrew
-  * ruby/rails
-  * python3/django
-  * node
-  * postgresql
 
 Copy and paste the following into your terminal:
 ```
