@@ -87,7 +87,7 @@ set incsearch		" do incremental searching
 set hlsearch
 
 " GUI setup:
-if has("gui_macvim")
+if has("gui_macvim") && has("gui_running")
   let g:netrw_winsize = 50
   colorscheme twilight
   :set guioptions-=r  "remove right-hand scroll bar
